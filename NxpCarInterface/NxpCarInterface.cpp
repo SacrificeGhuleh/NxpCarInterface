@@ -184,23 +184,25 @@ void NxpCarInterface::slotFreescaleData(nxpbc::SendData sendData) {
     ui_->rightPwmValueLabel->setText(QString::number(controlData.pwm_b));
     ui_->servoValueLabel->setText(QString::number(controlData.servo_pos[0]));
     ui_->motorSpeedValueLabel->setText(QString::number(sendData.motorSpeed));
+    ui_->errorValueLabel->setText(QString::number((float)((int)(sendData.error*100)/100.f)));
 
     ui_->regionSizeLabel->setText(QString::number(sendData.biggestRegion.getSize()));
     ui_->regionCenterLabel->setText(QString::number(sendData.biggestRegion.getCenter()));
+    ui_->leftDistanceValueLabel->setText(QString::number(sendData.biggestRegion.left));
+    ui_->rightDistanceValueLabel->setText(QString::number(sendData.biggestRegion.right));
 
-	uint8_t blackCount = 0, whiteCount = 0;
+    ui_->diversityValueLabel->setText(QString::number(sendData.imageDiversity));
 
-	for (int i = 0; i < MIN(sendData.regionsCount, SEND_REGIONS_NUM); i++) {
-		if (sendData.regions[i].isWhite()) {
-			whiteCount++;
-		}
-		else {
-			blackCount++;
-		}
-	}
+    ui_->leftMedianValueLabel->setText(QString::number(sendData.regionMedian[0]));
+    ui_->rightMedianValueLabel->setText(QString::number(sendData.regionMedian[1]));
 
-    ui_->blackRegionsCountValueLabel->setText(QString::number(blackCount));
-    ui_->whiteRegionsCountValueLabel->setText(QString::number(whiteCount));
+    ui_->leftAverageValueLabel->setText(QString::number(sendData.regionAverage[0]));
+    ui_->rightAverageValueLabel->setText(QString::number(sendData.regionAverage[1]));
+
+	
+
+    ui_->blackRegionsCountValueLabel->setText(QString::number(sendData.blackRegionsCount));
+    ui_->whiteRegionsCountValueLabel->setText(QString::number(sendData.whiteRegionsCount));
     ui_->leftPotLabel->setText(QString::number(serialData.ReadPot_i(0)));
     ui_->rightPotLabel->setText(QString::number((serialData.ReadPot_f(1) + 1.f) / 2.f * 100));
 
@@ -217,7 +219,7 @@ void NxpCarInterface::slotFreescaleData(nxpbc::SendData sendData) {
     sDataHistoryList_.push_front(serialData);
     sNxpImageList_.push_front(nxpbc::NxpImage(serialData.image));
     sNxpLinesList_.push_front(std::vector<nxpbc::Region>(std::begin(sendData.regions),
-                                                         std::begin(sendData.regions) + sendData.regionsCount));
+                                                         std::begin(sendData.regions) + sendData.whiteRegionsCount));
     sNxpBiggestRegionsList_.push_front(std::pair<nxpbc::Region, uint8_t>(sendData.biggestRegion, sendData.bits));
     if (sDataHistoryList_.size() > historySize) {
         sDataHistoryList_.pop_back();

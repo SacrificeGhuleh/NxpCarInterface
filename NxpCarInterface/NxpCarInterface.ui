@@ -618,17 +618,17 @@
                   <property name="minimumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">font: 75 36pt &quot;Segoe UI&quot;;</string>
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
                    <string>255</string>
@@ -639,23 +639,6 @@
                  </widget>
                 </item>
                </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_12">
-               <property name="maximumSize">
-                <size>
-                 <width>148</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_12"/>
               </widget>
              </item>
             </layout>
@@ -727,17 +710,17 @@
                   <property name="minimumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">font: 75 36pt &quot;Segoe UI&quot;;</string>
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
                    <string>255</string>
@@ -748,23 +731,6 @@
                  </widget>
                 </item>
                </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_14">
-               <property name="maximumSize">
-                <size>
-                 <width>148</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_15"/>
               </widget>
              </item>
             </layout>
@@ -836,17 +802,17 @@
                   <property name="minimumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">font: 75 36pt &quot;Segoe UI&quot;;</string>
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
                    <string>255</string>
@@ -857,23 +823,6 @@
                  </widget>
                 </item>
                </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_20">
-               <property name="maximumSize">
-                <size>
-                 <width>148</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_26"/>
               </widget>
              </item>
             </layout>
@@ -945,17 +894,17 @@
                   <property name="minimumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">font: 75 36pt &quot;Segoe UI&quot;;</string>
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
                    <string>255</string>
@@ -968,8 +917,57 @@
                </layout>
               </widget>
              </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="blackCountFrame">
+            <property name="maximumSize">
+             <size>
+              <width>168</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_41">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
              <item>
-              <widget class="QFrame" name="frame_16">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Black count</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_30">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
                <property name="maximumSize">
                 <size>
                  <width>148</width>
@@ -982,148 +980,326 @@
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
                </property>
-               <layout class="QVBoxLayout" name="verticalLayout_18">
+               <layout class="QVBoxLayout" name="verticalLayout_42">
                 <item>
-                 <widget class="QFrame" name="voltageMainFrame_3">
+                 <widget class="QLabel" name="blackRegionsCountValueLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
                   <property name="maximumSize">
                    <size>
-                    <width>168</width>
-                    <height>16777215</height>
+                    <width>128</width>
+                    <height>64</height>
                    </size>
                   </property>
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
                   </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
+                  <property name="text">
+                   <string>255</string>
                   </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_41">
-                   <property name="spacing">
-                    <number>0</number>
-                   </property>
-                   <property name="leftMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="topMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="rightMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="bottomMargin">
-                    <number>0</number>
-                   </property>
-                   <item>
-                    <widget class="QLabel" name="label_14">
-                     <property name="text">
-                      <string>Black count</string>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QFrame" name="frame_30">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="maximumSize">
-                      <size>
-                       <width>148</width>
-                       <height>16777215</height>
-                      </size>
-                     </property>
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
-                     </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_42">
-                      <item>
-                       <widget class="QLabel" name="blackRegionsCountValueLabel">
-                        <property name="minimumSize">
-                         <size>
-                          <width>128</width>
-                          <height>128</height>
-                         </size>
-                        </property>
-                        <property name="maximumSize">
-                         <size>
-                          <width>128</width>
-                          <height>128</height>
-                         </size>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">font: 75 36pt &quot;Segoe UI&quot;;</string>
-                        </property>
-                        <property name="text">
-                         <string>255</string>
-                        </property>
-                        <property name="alignment">
-                         <set>Qt::AlignCenter</set>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QFrame" name="frame_31">
-                     <property name="maximumSize">
-                      <size>
-                       <width>148</width>
-                       <height>16777215</height>
-                      </size>
-                     </property>
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
-                     </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_43">
-                      <item>
-                       <spacer name="verticalSpacer_4">
-                        <property name="orientation">
-                         <enum>Qt::Vertical</enum>
-                        </property>
-                        <property name="sizeHint" stdset="0">
-                         <size>
-                          <width>20</width>
-                          <height>40</height>
-                         </size>
-                        </property>
-                       </spacer>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                  </layout>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
                  </widget>
-                </item>
-                <item>
-                 <spacer name="verticalSpacer_2">
-                  <property name="orientation">
-                   <enum>Qt::Vertical</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>20</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                 </spacer>
                 </item>
                </layout>
               </widget>
              </item>
             </layout>
            </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="blackCountFrame_3">
+            <property name="maximumSize">
+             <size>
+              <width>168</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_47">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_17">
+               <property name="text">
+                <string>Left distance</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_35">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>148</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_48">
+                <item>
+                 <widget class="QLabel" name="leftDistanceValueLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>255</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="blackCountFrame_2">
+            <property name="maximumSize">
+             <size>
+              <width>168</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_43">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_16">
+               <property name="text">
+                <string>Left average</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_31">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>148</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_46">
+                <item>
+                 <widget class="QLabel" name="leftAverageValueLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>255</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="blackCountFrame_7">
+            <property name="maximumSize">
+             <size>
+              <width>168</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_70">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_31">
+               <property name="text">
+                <string>Left median</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_40">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>148</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_71">
+                <item>
+                 <widget class="QLabel" name="leftMedianValueLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>255</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -1203,17 +1379,17 @@
                   <property name="minimumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">font: 75 36pt &quot;Segoe UI&quot;;</string>
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
                    <string>255</string>
@@ -1224,23 +1400,6 @@
                  </widget>
                 </item>
                </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_23">
-               <property name="maximumSize">
-                <size>
-                 <width>148</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_31"/>
               </widget>
              </item>
             </layout>
@@ -1312,17 +1471,17 @@
                   <property name="minimumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">font: 75 36pt &quot;Segoe UI&quot;;</string>
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
                    <string>255</string>
@@ -1333,23 +1492,6 @@
                  </widget>
                 </item>
                </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_25">
-               <property name="maximumSize">
-                <size>
-                 <width>148</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_34"/>
               </widget>
              </item>
             </layout>
@@ -1388,7 +1530,7 @@
              <item>
               <widget class="QLabel" name="label_12">
                <property name="text">
-                <string>Levy potenciometr</string>
+                <string>POT 1 - Rychlost</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -1421,17 +1563,17 @@
                   <property name="minimumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">font: 75 36pt &quot;Segoe UI&quot;;</string>
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
                    <string>255</string>
@@ -1444,28 +1586,11 @@
                </layout>
               </widget>
              </item>
-             <item>
-              <widget class="QFrame" name="frame_27">
-               <property name="maximumSize">
-                <size>
-                 <width>148</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_37"/>
-              </widget>
-             </item>
             </layout>
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="voltageMainFrame_2">
+           <widget class="QFrame" name="regulatorMainFrame">
             <property name="maximumSize">
              <size>
               <width>168</width>
@@ -1497,7 +1622,7 @@
              <item>
               <widget class="QLabel" name="label_13">
                <property name="text">
-                <string>Pravy potenciometr</string>
+                <string>POT 2 - Regulator</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -1530,17 +1655,17 @@
                   <property name="minimumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
                     <width>128</width>
-                    <height>128</height>
+                    <height>64</height>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">font: 75 36pt &quot;Segoe UI&quot;;</string>
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
                    <string>255</string>
@@ -1553,8 +1678,57 @@
                </layout>
               </widget>
              </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="voltageMainFrame_4">
+            <property name="maximumSize">
+             <size>
+              <width>168</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_44">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
              <item>
-              <widget class="QFrame" name="frame_29">
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>White count</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_32">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
                <property name="maximumSize">
                 <size>
                  <width>148</width>
@@ -1567,148 +1741,535 @@
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
                </property>
-               <layout class="QVBoxLayout" name="verticalLayout_40">
+               <layout class="QVBoxLayout" name="verticalLayout_45">
                 <item>
-                 <widget class="QFrame" name="voltageMainFrame_4">
+                 <widget class="QLabel" name="whiteRegionsCountValueLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
                   <property name="maximumSize">
                    <size>
-                    <width>168</width>
-                    <height>16777215</height>
+                    <width>128</width>
+                    <height>64</height>
                    </size>
                   </property>
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
                   </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
+                  <property name="text">
+                   <string>255</string>
                   </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_44">
-                   <property name="spacing">
-                    <number>0</number>
-                   </property>
-                   <property name="leftMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="topMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="rightMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="bottomMargin">
-                    <number>0</number>
-                   </property>
-                   <item>
-                    <widget class="QLabel" name="label_15">
-                     <property name="text">
-                      <string>White count</string>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QFrame" name="frame_32">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="maximumSize">
-                      <size>
-                       <width>148</width>
-                       <height>16777215</height>
-                      </size>
-                     </property>
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
-                     </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_45">
-                      <item>
-                       <widget class="QLabel" name="whiteRegionsCountValueLabel">
-                        <property name="minimumSize">
-                         <size>
-                          <width>128</width>
-                          <height>128</height>
-                         </size>
-                        </property>
-                        <property name="maximumSize">
-                         <size>
-                          <width>128</width>
-                          <height>128</height>
-                         </size>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">font: 75 36pt &quot;Segoe UI&quot;;</string>
-                        </property>
-                        <property name="text">
-                         <string>255</string>
-                        </property>
-                        <property name="alignment">
-                         <set>Qt::AlignCenter</set>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QFrame" name="frame_33">
-                     <property name="maximumSize">
-                      <size>
-                       <width>148</width>
-                       <height>16777215</height>
-                      </size>
-                     </property>
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
-                     </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_46">
-                      <item>
-                       <spacer name="verticalSpacer_5">
-                        <property name="orientation">
-                         <enum>Qt::Vertical</enum>
-                        </property>
-                        <property name="sizeHint" stdset="0">
-                         <size>
-                          <width>20</width>
-                          <height>40</height>
-                         </size>
-                        </property>
-                       </spacer>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                  </layout>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
                  </widget>
-                </item>
-                <item>
-                 <spacer name="verticalSpacer_3">
-                  <property name="orientation">
-                   <enum>Qt::Vertical</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>20</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                 </spacer>
                 </item>
                </layout>
               </widget>
              </item>
             </layout>
            </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="blackCountFrame_10">
+            <property name="maximumSize">
+             <size>
+              <width>168</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_76">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_34">
+               <property name="text">
+                <string>Right distance</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_43">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>148</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_77">
+                <item>
+                 <widget class="QLabel" name="rightDistanceValueLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>255</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="blackCountFrame_9">
+            <property name="maximumSize">
+             <size>
+              <width>168</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_74">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_33">
+               <property name="text">
+                <string>Right average</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_42">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>148</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_75">
+                <item>
+                 <widget class="QLabel" name="rightAverageValueLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>255</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="blackCountFrame_8">
+            <property name="maximumSize">
+             <size>
+              <width>168</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_72">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_32">
+               <property name="text">
+                <string>Right median</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_41">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>148</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_73">
+                <item>
+                 <widget class="QLabel" name="rightMedianValueLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>255</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_23">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_31">
+          <item>
+           <widget class="QFrame" name="errorMainFrame">
+            <property name="maximumSize">
+             <size>
+              <width>168</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_50">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_20">
+               <property name="text">
+                <string>Error</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_33">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>148</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_51">
+                <item>
+                 <widget class="QLabel" name="errorValueLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>255</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="errorMainFrame_2">
+            <property name="maximumSize">
+             <size>
+              <width>168</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_52">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_21">
+               <property name="text">
+                <string>Diversity</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_34">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>148</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_53">
+                <item>
+                 <widget class="QLabel" name="diversityValueLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>128</width>
+                    <height>64</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 26pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>255</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -1761,7 +2322,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="frame_4">
+           <widget class="QFrame" name="connectionFrame">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>

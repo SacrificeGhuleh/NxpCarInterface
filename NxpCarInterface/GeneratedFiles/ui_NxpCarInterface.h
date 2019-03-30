@@ -76,42 +76,49 @@ public:
     QFrame *frame_11;
     QVBoxLayout *verticalLayout_11;
     QLabel *leftPWMValueLabel;
-    QFrame *frame_12;
-    QVBoxLayout *verticalLayout_12;
     QFrame *rightPwmMainFrame;
     QVBoxLayout *verticalLayout_13;
     QLabel *label_5;
     QFrame *frame_13;
     QVBoxLayout *verticalLayout_14;
     QLabel *rightPwmValueLabel;
-    QFrame *frame_14;
-    QVBoxLayout *verticalLayout_15;
     QFrame *motorSpeedFrame;
     QVBoxLayout *verticalLayout_24;
     QLabel *label_9;
     QFrame *frame_19;
     QVBoxLayout *verticalLayout_25;
     QLabel *motorSpeedValueLabel;
-    QFrame *frame_20;
-    QVBoxLayout *verticalLayout_26;
     QFrame *voltageMainFrame;
     QVBoxLayout *verticalLayout_16;
     QLabel *label_6;
     QFrame *frame_15;
     QVBoxLayout *verticalLayout_17;
     QLabel *voltageValueLabel;
-    QFrame *frame_16;
-    QVBoxLayout *verticalLayout_18;
-    QFrame *voltageMainFrame_3;
+    QFrame *blackCountFrame;
     QVBoxLayout *verticalLayout_41;
     QLabel *label_14;
     QFrame *frame_30;
     QVBoxLayout *verticalLayout_42;
     QLabel *blackRegionsCountValueLabel;
-    QFrame *frame_31;
+    QFrame *blackCountFrame_3;
+    QVBoxLayout *verticalLayout_47;
+    QLabel *label_17;
+    QFrame *frame_35;
+    QVBoxLayout *verticalLayout_48;
+    QLabel *leftDistanceValueLabel;
+    QFrame *blackCountFrame_2;
     QVBoxLayout *verticalLayout_43;
-    QSpacerItem *verticalSpacer_4;
-    QSpacerItem *verticalSpacer_2;
+    QLabel *label_16;
+    QFrame *frame_31;
+    QVBoxLayout *verticalLayout_46;
+    QLabel *leftAverageValueLabel;
+    QFrame *blackCountFrame_7;
+    QVBoxLayout *verticalLayout_70;
+    QLabel *label_31;
+    QFrame *frame_40;
+    QVBoxLayout *verticalLayout_71;
+    QLabel *leftMedianValueLabel;
+    QSpacerItem *verticalSpacer_3;
     QFrame *frame_21;
     QVBoxLayout *verticalLayout_28;
     QFrame *leftPwmMainFrame_2;
@@ -120,47 +127,69 @@ public:
     QFrame *frame_22;
     QVBoxLayout *verticalLayout_30;
     QLabel *regionSizeLabel;
-    QFrame *frame_23;
-    QVBoxLayout *verticalLayout_31;
     QFrame *rightPwmMainFrame_2;
     QVBoxLayout *verticalLayout_32;
     QLabel *label_11;
     QFrame *frame_24;
     QVBoxLayout *verticalLayout_33;
     QLabel *regionCenterLabel;
-    QFrame *frame_25;
-    QVBoxLayout *verticalLayout_34;
     QFrame *motorSpeedFrame_2;
     QVBoxLayout *verticalLayout_35;
     QLabel *label_12;
     QFrame *frame_26;
     QVBoxLayout *verticalLayout_36;
     QLabel *leftPotLabel;
-    QFrame *frame_27;
-    QVBoxLayout *verticalLayout_37;
-    QFrame *voltageMainFrame_2;
+    QFrame *regulatorMainFrame;
     QVBoxLayout *verticalLayout_38;
     QLabel *label_13;
     QFrame *frame_28;
     QVBoxLayout *verticalLayout_39;
     QLabel *rightPotLabel;
-    QFrame *frame_29;
-    QVBoxLayout *verticalLayout_40;
     QFrame *voltageMainFrame_4;
     QVBoxLayout *verticalLayout_44;
     QLabel *label_15;
     QFrame *frame_32;
     QVBoxLayout *verticalLayout_45;
     QLabel *whiteRegionsCountValueLabel;
+    QFrame *blackCountFrame_10;
+    QVBoxLayout *verticalLayout_76;
+    QLabel *label_34;
+    QFrame *frame_43;
+    QVBoxLayout *verticalLayout_77;
+    QLabel *rightDistanceValueLabel;
+    QFrame *blackCountFrame_9;
+    QVBoxLayout *verticalLayout_74;
+    QLabel *label_33;
+    QFrame *frame_42;
+    QVBoxLayout *verticalLayout_75;
+    QLabel *rightAverageValueLabel;
+    QFrame *blackCountFrame_8;
+    QVBoxLayout *verticalLayout_72;
+    QLabel *label_32;
+    QFrame *frame_41;
+    QVBoxLayout *verticalLayout_73;
+    QLabel *rightMedianValueLabel;
+    QSpacerItem *verticalSpacer_2;
+    QFrame *frame_23;
+    QVBoxLayout *verticalLayout_31;
+    QFrame *errorMainFrame;
+    QVBoxLayout *verticalLayout_50;
+    QLabel *label_20;
     QFrame *frame_33;
-    QVBoxLayout *verticalLayout_46;
-    QSpacerItem *verticalSpacer_5;
-    QSpacerItem *verticalSpacer_3;
+    QVBoxLayout *verticalLayout_51;
+    QLabel *errorValueLabel;
+    QFrame *errorMainFrame_2;
+    QVBoxLayout *verticalLayout_52;
+    QLabel *label_21;
+    QFrame *frame_34;
+    QVBoxLayout *verticalLayout_53;
+    QLabel *diversityValueLabel;
+    QSpacerItem *verticalSpacer_4;
     QSpacerItem *horizontalSpacer;
     QFrame *connectionMainFrame;
     QVBoxLayout *verticalLayout_19;
     QLabel *label_7;
-    QFrame *frame_4;
+    QFrame *connectionFrame;
     QVBoxLayout *verticalLayout_20;
     QComboBox *connectComboBoxAddress;
     QLineEdit *connectLineAddress;
@@ -488,27 +517,15 @@ public:
         verticalLayout_11->setObjectName(QString::fromUtf8("verticalLayout_11"));
         leftPWMValueLabel = new QLabel(frame_11);
         leftPWMValueLabel->setObjectName(QString::fromUtf8("leftPWMValueLabel"));
-        leftPWMValueLabel->setMinimumSize(QSize(128, 128));
-        leftPWMValueLabel->setMaximumSize(QSize(128, 128));
-        leftPWMValueLabel->setStyleSheet(QString::fromUtf8("font: 75 36pt \"Segoe UI\";"));
+        leftPWMValueLabel->setMinimumSize(QSize(128, 64));
+        leftPWMValueLabel->setMaximumSize(QSize(128, 64));
+        leftPWMValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
         leftPWMValueLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_11->addWidget(leftPWMValueLabel);
 
 
         verticalLayout_10->addWidget(frame_11);
-
-        frame_12 = new QFrame(leftPwmMainFrame);
-        frame_12->setObjectName(QString::fromUtf8("frame_12"));
-        frame_12->setMaximumSize(QSize(148, 16777215));
-        frame_12->setFrameShape(QFrame::StyledPanel);
-        frame_12->setFrameShadow(QFrame::Raised);
-        verticalLayout_12 = new QVBoxLayout(frame_12);
-        verticalLayout_12->setSpacing(6);
-        verticalLayout_12->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_12->setObjectName(QString::fromUtf8("verticalLayout_12"));
-
-        verticalLayout_10->addWidget(frame_12);
 
 
         verticalLayout_27->addWidget(leftPwmMainFrame);
@@ -542,27 +559,15 @@ public:
         verticalLayout_14->setObjectName(QString::fromUtf8("verticalLayout_14"));
         rightPwmValueLabel = new QLabel(frame_13);
         rightPwmValueLabel->setObjectName(QString::fromUtf8("rightPwmValueLabel"));
-        rightPwmValueLabel->setMinimumSize(QSize(128, 128));
-        rightPwmValueLabel->setMaximumSize(QSize(128, 128));
-        rightPwmValueLabel->setStyleSheet(QString::fromUtf8("font: 75 36pt \"Segoe UI\";"));
+        rightPwmValueLabel->setMinimumSize(QSize(128, 64));
+        rightPwmValueLabel->setMaximumSize(QSize(128, 64));
+        rightPwmValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
         rightPwmValueLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_14->addWidget(rightPwmValueLabel);
 
 
         verticalLayout_13->addWidget(frame_13);
-
-        frame_14 = new QFrame(rightPwmMainFrame);
-        frame_14->setObjectName(QString::fromUtf8("frame_14"));
-        frame_14->setMaximumSize(QSize(148, 16777215));
-        frame_14->setFrameShape(QFrame::StyledPanel);
-        frame_14->setFrameShadow(QFrame::Raised);
-        verticalLayout_15 = new QVBoxLayout(frame_14);
-        verticalLayout_15->setSpacing(6);
-        verticalLayout_15->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_15->setObjectName(QString::fromUtf8("verticalLayout_15"));
-
-        verticalLayout_13->addWidget(frame_14);
 
 
         verticalLayout_27->addWidget(rightPwmMainFrame);
@@ -596,27 +601,15 @@ public:
         verticalLayout_25->setObjectName(QString::fromUtf8("verticalLayout_25"));
         motorSpeedValueLabel = new QLabel(frame_19);
         motorSpeedValueLabel->setObjectName(QString::fromUtf8("motorSpeedValueLabel"));
-        motorSpeedValueLabel->setMinimumSize(QSize(128, 128));
-        motorSpeedValueLabel->setMaximumSize(QSize(128, 128));
-        motorSpeedValueLabel->setStyleSheet(QString::fromUtf8("font: 75 36pt \"Segoe UI\";"));
+        motorSpeedValueLabel->setMinimumSize(QSize(128, 64));
+        motorSpeedValueLabel->setMaximumSize(QSize(128, 64));
+        motorSpeedValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
         motorSpeedValueLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_25->addWidget(motorSpeedValueLabel);
 
 
         verticalLayout_24->addWidget(frame_19);
-
-        frame_20 = new QFrame(motorSpeedFrame);
-        frame_20->setObjectName(QString::fromUtf8("frame_20"));
-        frame_20->setMaximumSize(QSize(148, 16777215));
-        frame_20->setFrameShape(QFrame::StyledPanel);
-        frame_20->setFrameShadow(QFrame::Raised);
-        verticalLayout_26 = new QVBoxLayout(frame_20);
-        verticalLayout_26->setSpacing(6);
-        verticalLayout_26->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_26->setObjectName(QString::fromUtf8("verticalLayout_26"));
-
-        verticalLayout_24->addWidget(frame_20);
 
 
         verticalLayout_27->addWidget(motorSpeedFrame);
@@ -650,9 +643,9 @@ public:
         verticalLayout_17->setObjectName(QString::fromUtf8("verticalLayout_17"));
         voltageValueLabel = new QLabel(frame_15);
         voltageValueLabel->setObjectName(QString::fromUtf8("voltageValueLabel"));
-        voltageValueLabel->setMinimumSize(QSize(128, 128));
-        voltageValueLabel->setMaximumSize(QSize(128, 128));
-        voltageValueLabel->setStyleSheet(QString::fromUtf8("font: 75 36pt \"Segoe UI\";"));
+        voltageValueLabel->setMinimumSize(QSize(128, 64));
+        voltageValueLabel->setMaximumSize(QSize(128, 64));
+        voltageValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
         voltageValueLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_17->addWidget(voltageValueLabel);
@@ -660,32 +653,26 @@ public:
 
         verticalLayout_16->addWidget(frame_15);
 
-        frame_16 = new QFrame(voltageMainFrame);
-        frame_16->setObjectName(QString::fromUtf8("frame_16"));
-        frame_16->setMaximumSize(QSize(148, 16777215));
-        frame_16->setFrameShape(QFrame::StyledPanel);
-        frame_16->setFrameShadow(QFrame::Raised);
-        verticalLayout_18 = new QVBoxLayout(frame_16);
-        verticalLayout_18->setSpacing(6);
-        verticalLayout_18->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_18->setObjectName(QString::fromUtf8("verticalLayout_18"));
-        voltageMainFrame_3 = new QFrame(frame_16);
-        voltageMainFrame_3->setObjectName(QString::fromUtf8("voltageMainFrame_3"));
-        voltageMainFrame_3->setMaximumSize(QSize(168, 16777215));
-        voltageMainFrame_3->setFrameShape(QFrame::StyledPanel);
-        voltageMainFrame_3->setFrameShadow(QFrame::Raised);
-        verticalLayout_41 = new QVBoxLayout(voltageMainFrame_3);
+
+        verticalLayout_27->addWidget(voltageMainFrame);
+
+        blackCountFrame = new QFrame(frame_2);
+        blackCountFrame->setObjectName(QString::fromUtf8("blackCountFrame"));
+        blackCountFrame->setMaximumSize(QSize(168, 16777215));
+        blackCountFrame->setFrameShape(QFrame::StyledPanel);
+        blackCountFrame->setFrameShadow(QFrame::Raised);
+        verticalLayout_41 = new QVBoxLayout(blackCountFrame);
         verticalLayout_41->setSpacing(0);
         verticalLayout_41->setContentsMargins(11, 11, 11, 11);
         verticalLayout_41->setObjectName(QString::fromUtf8("verticalLayout_41"));
         verticalLayout_41->setContentsMargins(0, 0, 0, 0);
-        label_14 = new QLabel(voltageMainFrame_3);
+        label_14 = new QLabel(blackCountFrame);
         label_14->setObjectName(QString::fromUtf8("label_14"));
         label_14->setAlignment(Qt::AlignCenter);
 
         verticalLayout_41->addWidget(label_14);
 
-        frame_30 = new QFrame(voltageMainFrame_3);
+        frame_30 = new QFrame(blackCountFrame);
         frame_30->setObjectName(QString::fromUtf8("frame_30"));
         sizePolicy.setHeightForWidth(frame_30->sizePolicy().hasHeightForWidth());
         frame_30->setSizePolicy(sizePolicy);
@@ -698,9 +685,9 @@ public:
         verticalLayout_42->setObjectName(QString::fromUtf8("verticalLayout_42"));
         blackRegionsCountValueLabel = new QLabel(frame_30);
         blackRegionsCountValueLabel->setObjectName(QString::fromUtf8("blackRegionsCountValueLabel"));
-        blackRegionsCountValueLabel->setMinimumSize(QSize(128, 128));
-        blackRegionsCountValueLabel->setMaximumSize(QSize(128, 128));
-        blackRegionsCountValueLabel->setStyleSheet(QString::fromUtf8("font: 75 36pt \"Segoe UI\";"));
+        blackRegionsCountValueLabel->setMinimumSize(QSize(128, 64));
+        blackRegionsCountValueLabel->setMaximumSize(QSize(128, 64));
+        blackRegionsCountValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
         blackRegionsCountValueLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_42->addWidget(blackRegionsCountValueLabel);
@@ -708,34 +695,138 @@ public:
 
         verticalLayout_41->addWidget(frame_30);
 
-        frame_31 = new QFrame(voltageMainFrame_3);
+
+        verticalLayout_27->addWidget(blackCountFrame);
+
+        blackCountFrame_3 = new QFrame(frame_2);
+        blackCountFrame_3->setObjectName(QString::fromUtf8("blackCountFrame_3"));
+        blackCountFrame_3->setMaximumSize(QSize(168, 16777215));
+        blackCountFrame_3->setFrameShape(QFrame::StyledPanel);
+        blackCountFrame_3->setFrameShadow(QFrame::Raised);
+        verticalLayout_47 = new QVBoxLayout(blackCountFrame_3);
+        verticalLayout_47->setSpacing(0);
+        verticalLayout_47->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_47->setObjectName(QString::fromUtf8("verticalLayout_47"));
+        verticalLayout_47->setContentsMargins(0, 0, 0, 0);
+        label_17 = new QLabel(blackCountFrame_3);
+        label_17->setObjectName(QString::fromUtf8("label_17"));
+        label_17->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_47->addWidget(label_17);
+
+        frame_35 = new QFrame(blackCountFrame_3);
+        frame_35->setObjectName(QString::fromUtf8("frame_35"));
+        sizePolicy.setHeightForWidth(frame_35->sizePolicy().hasHeightForWidth());
+        frame_35->setSizePolicy(sizePolicy);
+        frame_35->setMaximumSize(QSize(148, 16777215));
+        frame_35->setFrameShape(QFrame::StyledPanel);
+        frame_35->setFrameShadow(QFrame::Raised);
+        verticalLayout_48 = new QVBoxLayout(frame_35);
+        verticalLayout_48->setSpacing(6);
+        verticalLayout_48->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_48->setObjectName(QString::fromUtf8("verticalLayout_48"));
+        leftDistanceValueLabel = new QLabel(frame_35);
+        leftDistanceValueLabel->setObjectName(QString::fromUtf8("leftDistanceValueLabel"));
+        leftDistanceValueLabel->setMinimumSize(QSize(128, 64));
+        leftDistanceValueLabel->setMaximumSize(QSize(128, 64));
+        leftDistanceValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
+        leftDistanceValueLabel->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_48->addWidget(leftDistanceValueLabel);
+
+
+        verticalLayout_47->addWidget(frame_35);
+
+
+        verticalLayout_27->addWidget(blackCountFrame_3);
+
+        blackCountFrame_2 = new QFrame(frame_2);
+        blackCountFrame_2->setObjectName(QString::fromUtf8("blackCountFrame_2"));
+        blackCountFrame_2->setMaximumSize(QSize(168, 16777215));
+        blackCountFrame_2->setFrameShape(QFrame::StyledPanel);
+        blackCountFrame_2->setFrameShadow(QFrame::Raised);
+        verticalLayout_43 = new QVBoxLayout(blackCountFrame_2);
+        verticalLayout_43->setSpacing(0);
+        verticalLayout_43->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_43->setObjectName(QString::fromUtf8("verticalLayout_43"));
+        verticalLayout_43->setContentsMargins(0, 0, 0, 0);
+        label_16 = new QLabel(blackCountFrame_2);
+        label_16->setObjectName(QString::fromUtf8("label_16"));
+        label_16->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_43->addWidget(label_16);
+
+        frame_31 = new QFrame(blackCountFrame_2);
         frame_31->setObjectName(QString::fromUtf8("frame_31"));
+        sizePolicy.setHeightForWidth(frame_31->sizePolicy().hasHeightForWidth());
+        frame_31->setSizePolicy(sizePolicy);
         frame_31->setMaximumSize(QSize(148, 16777215));
         frame_31->setFrameShape(QFrame::StyledPanel);
         frame_31->setFrameShadow(QFrame::Raised);
-        verticalLayout_43 = new QVBoxLayout(frame_31);
-        verticalLayout_43->setSpacing(6);
-        verticalLayout_43->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_43->setObjectName(QString::fromUtf8("verticalLayout_43"));
-        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalLayout_46 = new QVBoxLayout(frame_31);
+        verticalLayout_46->setSpacing(6);
+        verticalLayout_46->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_46->setObjectName(QString::fromUtf8("verticalLayout_46"));
+        leftAverageValueLabel = new QLabel(frame_31);
+        leftAverageValueLabel->setObjectName(QString::fromUtf8("leftAverageValueLabel"));
+        leftAverageValueLabel->setMinimumSize(QSize(128, 64));
+        leftAverageValueLabel->setMaximumSize(QSize(128, 64));
+        leftAverageValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
+        leftAverageValueLabel->setAlignment(Qt::AlignCenter);
 
-        verticalLayout_43->addItem(verticalSpacer_4);
-
-
-        verticalLayout_41->addWidget(frame_31);
-
-
-        verticalLayout_18->addWidget(voltageMainFrame_3);
-
-        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_18->addItem(verticalSpacer_2);
+        verticalLayout_46->addWidget(leftAverageValueLabel);
 
 
-        verticalLayout_16->addWidget(frame_16);
+        verticalLayout_43->addWidget(frame_31);
 
 
-        verticalLayout_27->addWidget(voltageMainFrame);
+        verticalLayout_27->addWidget(blackCountFrame_2);
+
+        blackCountFrame_7 = new QFrame(frame_2);
+        blackCountFrame_7->setObjectName(QString::fromUtf8("blackCountFrame_7"));
+        blackCountFrame_7->setMaximumSize(QSize(168, 16777215));
+        blackCountFrame_7->setFrameShape(QFrame::StyledPanel);
+        blackCountFrame_7->setFrameShadow(QFrame::Raised);
+        verticalLayout_70 = new QVBoxLayout(blackCountFrame_7);
+        verticalLayout_70->setSpacing(0);
+        verticalLayout_70->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_70->setObjectName(QString::fromUtf8("verticalLayout_70"));
+        verticalLayout_70->setContentsMargins(0, 0, 0, 0);
+        label_31 = new QLabel(blackCountFrame_7);
+        label_31->setObjectName(QString::fromUtf8("label_31"));
+        label_31->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_70->addWidget(label_31);
+
+        frame_40 = new QFrame(blackCountFrame_7);
+        frame_40->setObjectName(QString::fromUtf8("frame_40"));
+        sizePolicy.setHeightForWidth(frame_40->sizePolicy().hasHeightForWidth());
+        frame_40->setSizePolicy(sizePolicy);
+        frame_40->setMaximumSize(QSize(148, 16777215));
+        frame_40->setFrameShape(QFrame::StyledPanel);
+        frame_40->setFrameShadow(QFrame::Raised);
+        verticalLayout_71 = new QVBoxLayout(frame_40);
+        verticalLayout_71->setSpacing(6);
+        verticalLayout_71->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_71->setObjectName(QString::fromUtf8("verticalLayout_71"));
+        leftMedianValueLabel = new QLabel(frame_40);
+        leftMedianValueLabel->setObjectName(QString::fromUtf8("leftMedianValueLabel"));
+        leftMedianValueLabel->setMinimumSize(QSize(128, 64));
+        leftMedianValueLabel->setMaximumSize(QSize(128, 64));
+        leftMedianValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
+        leftMedianValueLabel->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_71->addWidget(leftMedianValueLabel);
+
+
+        verticalLayout_70->addWidget(frame_40);
+
+
+        verticalLayout_27->addWidget(blackCountFrame_7);
+
+        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_27->addItem(verticalSpacer_3);
 
 
         horizontalLayout->addWidget(frame_2);
@@ -777,27 +868,15 @@ public:
         verticalLayout_30->setObjectName(QString::fromUtf8("verticalLayout_30"));
         regionSizeLabel = new QLabel(frame_22);
         regionSizeLabel->setObjectName(QString::fromUtf8("regionSizeLabel"));
-        regionSizeLabel->setMinimumSize(QSize(128, 128));
-        regionSizeLabel->setMaximumSize(QSize(128, 128));
-        regionSizeLabel->setStyleSheet(QString::fromUtf8("font: 75 36pt \"Segoe UI\";"));
+        regionSizeLabel->setMinimumSize(QSize(128, 64));
+        regionSizeLabel->setMaximumSize(QSize(128, 64));
+        regionSizeLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
         regionSizeLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_30->addWidget(regionSizeLabel);
 
 
         verticalLayout_29->addWidget(frame_22);
-
-        frame_23 = new QFrame(leftPwmMainFrame_2);
-        frame_23->setObjectName(QString::fromUtf8("frame_23"));
-        frame_23->setMaximumSize(QSize(148, 16777215));
-        frame_23->setFrameShape(QFrame::StyledPanel);
-        frame_23->setFrameShadow(QFrame::Raised);
-        verticalLayout_31 = new QVBoxLayout(frame_23);
-        verticalLayout_31->setSpacing(6);
-        verticalLayout_31->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_31->setObjectName(QString::fromUtf8("verticalLayout_31"));
-
-        verticalLayout_29->addWidget(frame_23);
 
 
         verticalLayout_28->addWidget(leftPwmMainFrame_2);
@@ -831,27 +910,15 @@ public:
         verticalLayout_33->setObjectName(QString::fromUtf8("verticalLayout_33"));
         regionCenterLabel = new QLabel(frame_24);
         regionCenterLabel->setObjectName(QString::fromUtf8("regionCenterLabel"));
-        regionCenterLabel->setMinimumSize(QSize(128, 128));
-        regionCenterLabel->setMaximumSize(QSize(128, 128));
-        regionCenterLabel->setStyleSheet(QString::fromUtf8("font: 75 36pt \"Segoe UI\";"));
+        regionCenterLabel->setMinimumSize(QSize(128, 64));
+        regionCenterLabel->setMaximumSize(QSize(128, 64));
+        regionCenterLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
         regionCenterLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_33->addWidget(regionCenterLabel);
 
 
         verticalLayout_32->addWidget(frame_24);
-
-        frame_25 = new QFrame(rightPwmMainFrame_2);
-        frame_25->setObjectName(QString::fromUtf8("frame_25"));
-        frame_25->setMaximumSize(QSize(148, 16777215));
-        frame_25->setFrameShape(QFrame::StyledPanel);
-        frame_25->setFrameShadow(QFrame::Raised);
-        verticalLayout_34 = new QVBoxLayout(frame_25);
-        verticalLayout_34->setSpacing(6);
-        verticalLayout_34->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_34->setObjectName(QString::fromUtf8("verticalLayout_34"));
-
-        verticalLayout_32->addWidget(frame_25);
 
 
         verticalLayout_28->addWidget(rightPwmMainFrame_2);
@@ -885,9 +952,9 @@ public:
         verticalLayout_36->setObjectName(QString::fromUtf8("verticalLayout_36"));
         leftPotLabel = new QLabel(frame_26);
         leftPotLabel->setObjectName(QString::fromUtf8("leftPotLabel"));
-        leftPotLabel->setMinimumSize(QSize(128, 128));
-        leftPotLabel->setMaximumSize(QSize(128, 128));
-        leftPotLabel->setStyleSheet(QString::fromUtf8("font: 75 36pt \"Segoe UI\";"));
+        leftPotLabel->setMinimumSize(QSize(128, 64));
+        leftPotLabel->setMaximumSize(QSize(128, 64));
+        leftPotLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
         leftPotLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_36->addWidget(leftPotLabel);
@@ -895,38 +962,26 @@ public:
 
         verticalLayout_35->addWidget(frame_26);
 
-        frame_27 = new QFrame(motorSpeedFrame_2);
-        frame_27->setObjectName(QString::fromUtf8("frame_27"));
-        frame_27->setMaximumSize(QSize(148, 16777215));
-        frame_27->setFrameShape(QFrame::StyledPanel);
-        frame_27->setFrameShadow(QFrame::Raised);
-        verticalLayout_37 = new QVBoxLayout(frame_27);
-        verticalLayout_37->setSpacing(6);
-        verticalLayout_37->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_37->setObjectName(QString::fromUtf8("verticalLayout_37"));
-
-        verticalLayout_35->addWidget(frame_27);
-
 
         verticalLayout_28->addWidget(motorSpeedFrame_2);
 
-        voltageMainFrame_2 = new QFrame(frame_21);
-        voltageMainFrame_2->setObjectName(QString::fromUtf8("voltageMainFrame_2"));
-        voltageMainFrame_2->setMaximumSize(QSize(168, 16777215));
-        voltageMainFrame_2->setFrameShape(QFrame::StyledPanel);
-        voltageMainFrame_2->setFrameShadow(QFrame::Raised);
-        verticalLayout_38 = new QVBoxLayout(voltageMainFrame_2);
+        regulatorMainFrame = new QFrame(frame_21);
+        regulatorMainFrame->setObjectName(QString::fromUtf8("regulatorMainFrame"));
+        regulatorMainFrame->setMaximumSize(QSize(168, 16777215));
+        regulatorMainFrame->setFrameShape(QFrame::StyledPanel);
+        regulatorMainFrame->setFrameShadow(QFrame::Raised);
+        verticalLayout_38 = new QVBoxLayout(regulatorMainFrame);
         verticalLayout_38->setSpacing(0);
         verticalLayout_38->setContentsMargins(11, 11, 11, 11);
         verticalLayout_38->setObjectName(QString::fromUtf8("verticalLayout_38"));
         verticalLayout_38->setContentsMargins(0, 0, 0, 0);
-        label_13 = new QLabel(voltageMainFrame_2);
+        label_13 = new QLabel(regulatorMainFrame);
         label_13->setObjectName(QString::fromUtf8("label_13"));
         label_13->setAlignment(Qt::AlignCenter);
 
         verticalLayout_38->addWidget(label_13);
 
-        frame_28 = new QFrame(voltageMainFrame_2);
+        frame_28 = new QFrame(regulatorMainFrame);
         frame_28->setObjectName(QString::fromUtf8("frame_28"));
         sizePolicy.setHeightForWidth(frame_28->sizePolicy().hasHeightForWidth());
         frame_28->setSizePolicy(sizePolicy);
@@ -939,9 +994,9 @@ public:
         verticalLayout_39->setObjectName(QString::fromUtf8("verticalLayout_39"));
         rightPotLabel = new QLabel(frame_28);
         rightPotLabel->setObjectName(QString::fromUtf8("rightPotLabel"));
-        rightPotLabel->setMinimumSize(QSize(128, 128));
-        rightPotLabel->setMaximumSize(QSize(128, 128));
-        rightPotLabel->setStyleSheet(QString::fromUtf8("font: 75 36pt \"Segoe UI\";"));
+        rightPotLabel->setMinimumSize(QSize(128, 64));
+        rightPotLabel->setMaximumSize(QSize(128, 64));
+        rightPotLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
         rightPotLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_39->addWidget(rightPotLabel);
@@ -949,16 +1004,10 @@ public:
 
         verticalLayout_38->addWidget(frame_28);
 
-        frame_29 = new QFrame(voltageMainFrame_2);
-        frame_29->setObjectName(QString::fromUtf8("frame_29"));
-        frame_29->setMaximumSize(QSize(148, 16777215));
-        frame_29->setFrameShape(QFrame::StyledPanel);
-        frame_29->setFrameShadow(QFrame::Raised);
-        verticalLayout_40 = new QVBoxLayout(frame_29);
-        verticalLayout_40->setSpacing(6);
-        verticalLayout_40->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_40->setObjectName(QString::fromUtf8("verticalLayout_40"));
-        voltageMainFrame_4 = new QFrame(frame_29);
+
+        verticalLayout_28->addWidget(regulatorMainFrame);
+
+        voltageMainFrame_4 = new QFrame(frame_21);
         voltageMainFrame_4->setObjectName(QString::fromUtf8("voltageMainFrame_4"));
         voltageMainFrame_4->setMaximumSize(QSize(168, 16777215));
         voltageMainFrame_4->setFrameShape(QFrame::StyledPanel);
@@ -987,9 +1036,9 @@ public:
         verticalLayout_45->setObjectName(QString::fromUtf8("verticalLayout_45"));
         whiteRegionsCountValueLabel = new QLabel(frame_32);
         whiteRegionsCountValueLabel->setObjectName(QString::fromUtf8("whiteRegionsCountValueLabel"));
-        whiteRegionsCountValueLabel->setMinimumSize(QSize(128, 128));
-        whiteRegionsCountValueLabel->setMaximumSize(QSize(128, 128));
-        whiteRegionsCountValueLabel->setStyleSheet(QString::fromUtf8("font: 75 36pt \"Segoe UI\";"));
+        whiteRegionsCountValueLabel->setMinimumSize(QSize(128, 64));
+        whiteRegionsCountValueLabel->setMaximumSize(QSize(128, 64));
+        whiteRegionsCountValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
         whiteRegionsCountValueLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_45->addWidget(whiteRegionsCountValueLabel);
@@ -997,37 +1046,240 @@ public:
 
         verticalLayout_44->addWidget(frame_32);
 
-        frame_33 = new QFrame(voltageMainFrame_4);
-        frame_33->setObjectName(QString::fromUtf8("frame_33"));
-        frame_33->setMaximumSize(QSize(148, 16777215));
-        frame_33->setFrameShape(QFrame::StyledPanel);
-        frame_33->setFrameShadow(QFrame::Raised);
-        verticalLayout_46 = new QVBoxLayout(frame_33);
-        verticalLayout_46->setSpacing(6);
-        verticalLayout_46->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_46->setObjectName(QString::fromUtf8("verticalLayout_46"));
-        verticalSpacer_5 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        verticalLayout_46->addItem(verticalSpacer_5);
+        verticalLayout_28->addWidget(voltageMainFrame_4);
+
+        blackCountFrame_10 = new QFrame(frame_21);
+        blackCountFrame_10->setObjectName(QString::fromUtf8("blackCountFrame_10"));
+        blackCountFrame_10->setMaximumSize(QSize(168, 16777215));
+        blackCountFrame_10->setFrameShape(QFrame::StyledPanel);
+        blackCountFrame_10->setFrameShadow(QFrame::Raised);
+        verticalLayout_76 = new QVBoxLayout(blackCountFrame_10);
+        verticalLayout_76->setSpacing(0);
+        verticalLayout_76->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_76->setObjectName(QString::fromUtf8("verticalLayout_76"));
+        verticalLayout_76->setContentsMargins(0, 0, 0, 0);
+        label_34 = new QLabel(blackCountFrame_10);
+        label_34->setObjectName(QString::fromUtf8("label_34"));
+        label_34->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_76->addWidget(label_34);
+
+        frame_43 = new QFrame(blackCountFrame_10);
+        frame_43->setObjectName(QString::fromUtf8("frame_43"));
+        sizePolicy.setHeightForWidth(frame_43->sizePolicy().hasHeightForWidth());
+        frame_43->setSizePolicy(sizePolicy);
+        frame_43->setMaximumSize(QSize(148, 16777215));
+        frame_43->setFrameShape(QFrame::StyledPanel);
+        frame_43->setFrameShadow(QFrame::Raised);
+        verticalLayout_77 = new QVBoxLayout(frame_43);
+        verticalLayout_77->setSpacing(6);
+        verticalLayout_77->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_77->setObjectName(QString::fromUtf8("verticalLayout_77"));
+        rightDistanceValueLabel = new QLabel(frame_43);
+        rightDistanceValueLabel->setObjectName(QString::fromUtf8("rightDistanceValueLabel"));
+        rightDistanceValueLabel->setMinimumSize(QSize(128, 64));
+        rightDistanceValueLabel->setMaximumSize(QSize(128, 64));
+        rightDistanceValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
+        rightDistanceValueLabel->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_77->addWidget(rightDistanceValueLabel);
 
 
-        verticalLayout_44->addWidget(frame_33);
+        verticalLayout_76->addWidget(frame_43);
 
 
-        verticalLayout_40->addWidget(voltageMainFrame_4);
+        verticalLayout_28->addWidget(blackCountFrame_10);
 
-        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        blackCountFrame_9 = new QFrame(frame_21);
+        blackCountFrame_9->setObjectName(QString::fromUtf8("blackCountFrame_9"));
+        blackCountFrame_9->setMaximumSize(QSize(168, 16777215));
+        blackCountFrame_9->setFrameShape(QFrame::StyledPanel);
+        blackCountFrame_9->setFrameShadow(QFrame::Raised);
+        verticalLayout_74 = new QVBoxLayout(blackCountFrame_9);
+        verticalLayout_74->setSpacing(0);
+        verticalLayout_74->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_74->setObjectName(QString::fromUtf8("verticalLayout_74"));
+        verticalLayout_74->setContentsMargins(0, 0, 0, 0);
+        label_33 = new QLabel(blackCountFrame_9);
+        label_33->setObjectName(QString::fromUtf8("label_33"));
+        label_33->setAlignment(Qt::AlignCenter);
 
-        verticalLayout_40->addItem(verticalSpacer_3);
+        verticalLayout_74->addWidget(label_33);
+
+        frame_42 = new QFrame(blackCountFrame_9);
+        frame_42->setObjectName(QString::fromUtf8("frame_42"));
+        sizePolicy.setHeightForWidth(frame_42->sizePolicy().hasHeightForWidth());
+        frame_42->setSizePolicy(sizePolicy);
+        frame_42->setMaximumSize(QSize(148, 16777215));
+        frame_42->setFrameShape(QFrame::StyledPanel);
+        frame_42->setFrameShadow(QFrame::Raised);
+        verticalLayout_75 = new QVBoxLayout(frame_42);
+        verticalLayout_75->setSpacing(6);
+        verticalLayout_75->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_75->setObjectName(QString::fromUtf8("verticalLayout_75"));
+        rightAverageValueLabel = new QLabel(frame_42);
+        rightAverageValueLabel->setObjectName(QString::fromUtf8("rightAverageValueLabel"));
+        rightAverageValueLabel->setMinimumSize(QSize(128, 64));
+        rightAverageValueLabel->setMaximumSize(QSize(128, 64));
+        rightAverageValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
+        rightAverageValueLabel->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_75->addWidget(rightAverageValueLabel);
 
 
-        verticalLayout_38->addWidget(frame_29);
+        verticalLayout_74->addWidget(frame_42);
 
 
-        verticalLayout_28->addWidget(voltageMainFrame_2);
+        verticalLayout_28->addWidget(blackCountFrame_9);
+
+        blackCountFrame_8 = new QFrame(frame_21);
+        blackCountFrame_8->setObjectName(QString::fromUtf8("blackCountFrame_8"));
+        blackCountFrame_8->setMaximumSize(QSize(168, 16777215));
+        blackCountFrame_8->setFrameShape(QFrame::StyledPanel);
+        blackCountFrame_8->setFrameShadow(QFrame::Raised);
+        verticalLayout_72 = new QVBoxLayout(blackCountFrame_8);
+        verticalLayout_72->setSpacing(0);
+        verticalLayout_72->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_72->setObjectName(QString::fromUtf8("verticalLayout_72"));
+        verticalLayout_72->setContentsMargins(0, 0, 0, 0);
+        label_32 = new QLabel(blackCountFrame_8);
+        label_32->setObjectName(QString::fromUtf8("label_32"));
+        label_32->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_72->addWidget(label_32);
+
+        frame_41 = new QFrame(blackCountFrame_8);
+        frame_41->setObjectName(QString::fromUtf8("frame_41"));
+        sizePolicy.setHeightForWidth(frame_41->sizePolicy().hasHeightForWidth());
+        frame_41->setSizePolicy(sizePolicy);
+        frame_41->setMaximumSize(QSize(148, 16777215));
+        frame_41->setFrameShape(QFrame::StyledPanel);
+        frame_41->setFrameShadow(QFrame::Raised);
+        verticalLayout_73 = new QVBoxLayout(frame_41);
+        verticalLayout_73->setSpacing(6);
+        verticalLayout_73->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_73->setObjectName(QString::fromUtf8("verticalLayout_73"));
+        rightMedianValueLabel = new QLabel(frame_41);
+        rightMedianValueLabel->setObjectName(QString::fromUtf8("rightMedianValueLabel"));
+        rightMedianValueLabel->setMinimumSize(QSize(128, 64));
+        rightMedianValueLabel->setMaximumSize(QSize(128, 64));
+        rightMedianValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
+        rightMedianValueLabel->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_73->addWidget(rightMedianValueLabel);
+
+
+        verticalLayout_72->addWidget(frame_41);
+
+
+        verticalLayout_28->addWidget(blackCountFrame_8);
+
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_28->addItem(verticalSpacer_2);
 
 
         horizontalLayout->addWidget(frame_21);
+
+        frame_23 = new QFrame(frame_7);
+        frame_23->setObjectName(QString::fromUtf8("frame_23"));
+        frame_23->setFrameShape(QFrame::StyledPanel);
+        frame_23->setFrameShadow(QFrame::Raised);
+        verticalLayout_31 = new QVBoxLayout(frame_23);
+        verticalLayout_31->setSpacing(6);
+        verticalLayout_31->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_31->setObjectName(QString::fromUtf8("verticalLayout_31"));
+        errorMainFrame = new QFrame(frame_23);
+        errorMainFrame->setObjectName(QString::fromUtf8("errorMainFrame"));
+        errorMainFrame->setMaximumSize(QSize(168, 16777215));
+        errorMainFrame->setFrameShape(QFrame::StyledPanel);
+        errorMainFrame->setFrameShadow(QFrame::Raised);
+        verticalLayout_50 = new QVBoxLayout(errorMainFrame);
+        verticalLayout_50->setSpacing(0);
+        verticalLayout_50->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_50->setObjectName(QString::fromUtf8("verticalLayout_50"));
+        verticalLayout_50->setContentsMargins(0, 0, 0, 0);
+        label_20 = new QLabel(errorMainFrame);
+        label_20->setObjectName(QString::fromUtf8("label_20"));
+        label_20->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_50->addWidget(label_20);
+
+        frame_33 = new QFrame(errorMainFrame);
+        frame_33->setObjectName(QString::fromUtf8("frame_33"));
+        sizePolicy.setHeightForWidth(frame_33->sizePolicy().hasHeightForWidth());
+        frame_33->setSizePolicy(sizePolicy);
+        frame_33->setMaximumSize(QSize(148, 16777215));
+        frame_33->setFrameShape(QFrame::StyledPanel);
+        frame_33->setFrameShadow(QFrame::Raised);
+        verticalLayout_51 = new QVBoxLayout(frame_33);
+        verticalLayout_51->setSpacing(6);
+        verticalLayout_51->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_51->setObjectName(QString::fromUtf8("verticalLayout_51"));
+        errorValueLabel = new QLabel(frame_33);
+        errorValueLabel->setObjectName(QString::fromUtf8("errorValueLabel"));
+        errorValueLabel->setMinimumSize(QSize(128, 64));
+        errorValueLabel->setMaximumSize(QSize(128, 64));
+        errorValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
+        errorValueLabel->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_51->addWidget(errorValueLabel);
+
+
+        verticalLayout_50->addWidget(frame_33);
+
+
+        verticalLayout_31->addWidget(errorMainFrame);
+
+        errorMainFrame_2 = new QFrame(frame_23);
+        errorMainFrame_2->setObjectName(QString::fromUtf8("errorMainFrame_2"));
+        errorMainFrame_2->setMaximumSize(QSize(168, 16777215));
+        errorMainFrame_2->setFrameShape(QFrame::StyledPanel);
+        errorMainFrame_2->setFrameShadow(QFrame::Raised);
+        verticalLayout_52 = new QVBoxLayout(errorMainFrame_2);
+        verticalLayout_52->setSpacing(0);
+        verticalLayout_52->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_52->setObjectName(QString::fromUtf8("verticalLayout_52"));
+        verticalLayout_52->setContentsMargins(0, 0, 0, 0);
+        label_21 = new QLabel(errorMainFrame_2);
+        label_21->setObjectName(QString::fromUtf8("label_21"));
+        label_21->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_52->addWidget(label_21);
+
+        frame_34 = new QFrame(errorMainFrame_2);
+        frame_34->setObjectName(QString::fromUtf8("frame_34"));
+        sizePolicy.setHeightForWidth(frame_34->sizePolicy().hasHeightForWidth());
+        frame_34->setSizePolicy(sizePolicy);
+        frame_34->setMaximumSize(QSize(148, 16777215));
+        frame_34->setFrameShape(QFrame::StyledPanel);
+        frame_34->setFrameShadow(QFrame::Raised);
+        verticalLayout_53 = new QVBoxLayout(frame_34);
+        verticalLayout_53->setSpacing(6);
+        verticalLayout_53->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_53->setObjectName(QString::fromUtf8("verticalLayout_53"));
+        diversityValueLabel = new QLabel(frame_34);
+        diversityValueLabel->setObjectName(QString::fromUtf8("diversityValueLabel"));
+        diversityValueLabel->setMinimumSize(QSize(128, 64));
+        diversityValueLabel->setMaximumSize(QSize(128, 64));
+        diversityValueLabel->setStyleSheet(QString::fromUtf8("font: 75 26pt \"Segoe UI\";"));
+        diversityValueLabel->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_53->addWidget(diversityValueLabel);
+
+
+        verticalLayout_52->addWidget(frame_34);
+
+
+        verticalLayout_31->addWidget(errorMainFrame_2);
+
+        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_31->addItem(verticalSpacer_4);
+
+
+        horizontalLayout->addWidget(frame_23);
 
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -1048,15 +1300,15 @@ public:
 
         verticalLayout_19->addWidget(label_7);
 
-        frame_4 = new QFrame(connectionMainFrame);
-        frame_4->setObjectName(QString::fromUtf8("frame_4"));
-        frame_4->setFrameShape(QFrame::StyledPanel);
-        frame_4->setFrameShadow(QFrame::Raised);
-        verticalLayout_20 = new QVBoxLayout(frame_4);
+        connectionFrame = new QFrame(connectionMainFrame);
+        connectionFrame->setObjectName(QString::fromUtf8("connectionFrame"));
+        connectionFrame->setFrameShape(QFrame::StyledPanel);
+        connectionFrame->setFrameShadow(QFrame::Raised);
+        verticalLayout_20 = new QVBoxLayout(connectionFrame);
         verticalLayout_20->setSpacing(6);
         verticalLayout_20->setContentsMargins(11, 11, 11, 11);
         verticalLayout_20->setObjectName(QString::fromUtf8("verticalLayout_20"));
-        connectComboBoxAddress = new QComboBox(frame_4);
+        connectComboBoxAddress = new QComboBox(connectionFrame);
         connectComboBoxAddress->addItem(QString());
         connectComboBoxAddress->addItem(QString());
         connectComboBoxAddress->addItem(QString());
@@ -1065,22 +1317,22 @@ public:
 
         verticalLayout_20->addWidget(connectComboBoxAddress);
 
-        connectLineAddress = new QLineEdit(frame_4);
+        connectLineAddress = new QLineEdit(connectionFrame);
         connectLineAddress->setObjectName(QString::fromUtf8("connectLineAddress"));
 
         verticalLayout_20->addWidget(connectLineAddress);
 
-        connectPort = new QLineEdit(frame_4);
+        connectPort = new QLineEdit(connectionFrame);
         connectPort->setObjectName(QString::fromUtf8("connectPort"));
 
         verticalLayout_20->addWidget(connectPort);
 
-        connectBtn = new QPushButton(frame_4);
+        connectBtn = new QPushButton(connectionFrame);
         connectBtn->setObjectName(QString::fromUtf8("connectBtn"));
 
         verticalLayout_20->addWidget(connectBtn);
 
-        disconnectBtn = new QPushButton(frame_4);
+        disconnectBtn = new QPushButton(connectionFrame);
         disconnectBtn->setObjectName(QString::fromUtf8("disconnectBtn"));
 
         verticalLayout_20->addWidget(disconnectBtn);
@@ -1090,7 +1342,7 @@ public:
         verticalLayout_20->addItem(verticalSpacer);
 
 
-        verticalLayout_19->addWidget(frame_4);
+        verticalLayout_19->addWidget(connectionFrame);
 
 
         horizontalLayout->addWidget(connectionMainFrame);
@@ -1134,16 +1386,32 @@ public:
         voltageValueLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
         label_14->setText(QApplication::translate("NxpCarInterfaceClass", "Black count", nullptr));
         blackRegionsCountValueLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
+        label_17->setText(QApplication::translate("NxpCarInterfaceClass", "Left distance", nullptr));
+        leftDistanceValueLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
+        label_16->setText(QApplication::translate("NxpCarInterfaceClass", "Left average", nullptr));
+        leftAverageValueLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
+        label_31->setText(QApplication::translate("NxpCarInterfaceClass", "Left median", nullptr));
+        leftMedianValueLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
         label_10->setText(QApplication::translate("NxpCarInterfaceClass", "Velikost oblasti", nullptr));
         regionSizeLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
         label_11->setText(QApplication::translate("NxpCarInterfaceClass", "Stred oblasti", nullptr));
         regionCenterLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
-        label_12->setText(QApplication::translate("NxpCarInterfaceClass", "Levy potenciometr", nullptr));
+        label_12->setText(QApplication::translate("NxpCarInterfaceClass", "POT 1 - Rychlost", nullptr));
         leftPotLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
-        label_13->setText(QApplication::translate("NxpCarInterfaceClass", "Pravy potenciometr", nullptr));
+        label_13->setText(QApplication::translate("NxpCarInterfaceClass", "POT 2 - Regulator", nullptr));
         rightPotLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
         label_15->setText(QApplication::translate("NxpCarInterfaceClass", "White count", nullptr));
         whiteRegionsCountValueLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
+        label_34->setText(QApplication::translate("NxpCarInterfaceClass", "Right distance", nullptr));
+        rightDistanceValueLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
+        label_33->setText(QApplication::translate("NxpCarInterfaceClass", "Right average", nullptr));
+        rightAverageValueLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
+        label_32->setText(QApplication::translate("NxpCarInterfaceClass", "Right median", nullptr));
+        rightMedianValueLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
+        label_20->setText(QApplication::translate("NxpCarInterfaceClass", "Error", nullptr));
+        errorValueLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
+        label_21->setText(QApplication::translate("NxpCarInterfaceClass", "Diversity", nullptr));
+        diversityValueLabel->setText(QApplication::translate("NxpCarInterfaceClass", "255", nullptr));
         label_7->setText(QApplication::translate("NxpCarInterfaceClass", "Connection", nullptr));
         connectComboBoxAddress->setItemText(0, QApplication::translate("NxpCarInterfaceClass", "192.168.4.1", nullptr));
         connectComboBoxAddress->setItemText(1, QApplication::translate("NxpCarInterfaceClass", "192.168.2.130", nullptr));

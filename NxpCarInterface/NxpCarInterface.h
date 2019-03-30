@@ -57,7 +57,7 @@ private:
 		auto it = std::minmax_element(std::begin(vals), std::end(vals));
 		float scale = 1. / ceil(*it.second - *it.first);
 		float bias = *it.first;
-		int YRange[2] = { MIN(min, max),MAX(min,max) };
+		uint YRange[2] = { MIN(min, max),MAX(min,max) };
 		int rows = YRange[1] - YRange[0] + 1;
 		cv::Mat image = cv::Mat::zeros(rows, 128, CV_8UC3);
 		image.setTo(0);
