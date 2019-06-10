@@ -25,6 +25,7 @@ public slots:
 public:
     void resizeEvent(QResizeEvent* event) override;
 private:
+
     Ui::NxpCarInterfaceClass* ui_;
     UDPClient* client_;
 
@@ -49,7 +50,10 @@ private:
 
     bool connected_;
 
+	std::ofstream outFile_;
 
+
+	void sendDataToCsv(nxpbc::SendData& data);
     void showMat(QGraphicsView* view, cv::Mat mat);
 
 	template <typename T, size_t size>

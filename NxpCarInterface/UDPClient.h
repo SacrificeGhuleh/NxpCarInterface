@@ -10,6 +10,7 @@ Q_OBJECT
 
 public:
     UDPClient(QString address, int port, QObject* parent);
+    UDPClient(int port, QObject* parent);
     ~UDPClient();
 
     void helloUdp();

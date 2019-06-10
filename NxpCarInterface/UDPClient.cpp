@@ -20,6 +20,24 @@ UDPClient::UDPClient(QString address, int port, QObject* parent): QObject(parent
     connect(socket_, &QUdpSocket::readyRead, this, &UDPClient::readyRead);
 }
 
+UDPClient::UDPClient(int port, QObject* parent) : QObject(parent),
+                                                  socket_{new QUdpSocket(this)},
+                                                  hostAddress_{QHostAddress::Any},
+                                                  port_{port} {
+
+    // create a QUDP socket
+    //socket = new QUdpSocket(this);
+
+    // The most common way to use QUdpSocket class is 
+    // to bind to an address and port using bind()
+    // bool QAbstractSocket::bind(const QHostAddress & address, 
+    //     quint16 port = 0, BindMode mode = DefaultForPlatform)
+    //socket_->bind(hostAddress_, port);
+    socket_->bind(QHostAddress::Any, port, QUdpSocket::ShareAddress);
+
+    connect(socket_, &QUdpSocket::readyRead, this, &UDPClient::readyRead);
+}
+
 UDPClient::~UDPClient() {}
 
 void UDPClient::helloUdp() {
@@ -54,12 +72,11 @@ void UDPClient::readyRead() {
     if (buffer.size() <= 1)
         return;
 
-
     if (buffer.size() == sizeof(nxpbc::SendData)) {
         const nxpbc::SendData data = *reinterpret_cast<nxpbc::SendData*>(buffer.data());
         //memcpy(buffer.data(), &data, sizeof(SendData));
 
-	    emit signalFreescaleData(data);
+        emit signalFreescaleData(data);
         /*
         s_data sData(data);
         //s_setting sSetting(data);
@@ -74,8 +91,8 @@ void UDPClient::readyRead() {
     if (!(buffer.at(0) == static_cast<char>(STX) && buffer.at(buffer.size() - 1) == static_cast<char>(ETX)))
         return;
 
-	buffer.remove(buffer.size() - 1, 1);
-	buffer.remove(0, 4);
+    buffer.remove(buffer.size() - 1, 1);
+    buffer.remove(0, 4);
 
     char cmd = buffer.at(3);
 
