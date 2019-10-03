@@ -14,30 +14,30 @@ namespace nxpbc {
 
 #ifndef __TFC_H
 
-#define CAMERA_LINE_LENGTH			128				// Number of camera pixels
+#define CAMERA_LINE_LENGTH      128        // Number of camera pixels
 
-#define PWM_MINMAX					1000			// -/+ range for PWM
+#define PWM_MINMAX          1000      // -/+ range for PWM
 
-#define SERVO_MINMAX				1000			// -/+ range for servo position
+#define SERVO_MINMAX        1000      // -/+ range for servo position
 
-#define ADC_MAXVAL					0x0FFF			// Maximum value of analog sample from ADC
-#define ANDATA_MINMAX				1000			// -/+ range for analog values (e.g. potentiometers)
+#define ADC_MAXVAL          0x0FFF      // Maximum value of analog sample from ADC
+#define ANDATA_MINMAX        1000      // -/+ range for analog values (e.g. potentiometers)
 
-#define SERVO_DEFAULT_CENTER		1500			// Center position of servo - pulse in microseconds
-#define SERVO_DEFAULT_MAX_LR		200				// Default -/+ range of pulse width range
-#define SERVO_MAX_LR				400				// Maximum -/+ allowed range of pulse width
+#define SERVO_DEFAULT_CENTER    1500      // Center position of servo - pulse in microseconds
+#define SERVO_DEFAULT_MAX_LR    200        // Default -/+ range of pulse width range
+#define SERVO_MAX_LR        400        // Maximum -/+ allowed range of pulse width
 
-#define PWM_DEFAULT_MAX				200				// Default value for maximal -/+ PWM duty cycle
-#define PWM_MAX						500				// Maximal allowed -/+ PWM duty cycle
-
-	// commands
-#define CMD_DATA					1
-#define CMD_SETTING					2
-#define CMD_CONTROL					3
+#define PWM_DEFAULT_MAX        200        // Default value for maximal -/+ PWM duty cycle
+#define PWM_MAX            500        // Maximal allowed -/+ PWM duty cycle
+  
+  // commands
+#define CMD_DATA          1
+#define CMD_SETTING          2
+#define CMD_CONTROL          3
 
 // protocol start and stop byte
-#define STX							0x2
-#define ETX							0x3
+#define STX              0x2
+#define ETX              0x3
 
 #endif
 
@@ -62,9 +62,9 @@ namespace nxpbc {
 #define CONTROL_MAX_RATIO Settings::getInstance()->getServoMaxRatio()
 
 #define CONST_ERROR Settings::getInstance()->getErrorConst()
-		   
+
 #define CONST_DERIVATIVE Settings::getInstance()->getDerivativeConst()
-			
+
 #define CONST_INTEGRAL Settings::getInstance()->getIntegralConst()
 
 #define COLOR_BLACK 0x00
